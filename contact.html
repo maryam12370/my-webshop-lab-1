@@ -3,45 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Contact Us - My Webshop</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
+      <p>My Webshop</p>
+
       <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="about.html">About</a>
+        <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
       </nav>
     </header>
 
     <main>
       <h1>Contact Us</h1>
 
+      <p>If you have any questions, please contact us using the form below.</p>
+
       <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <br /><br />
+        <input type="text" id="name" name="name" autocomplete="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+        />
 
         <label for="message">Message:</label>
-        <br />
-
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <br /><br />
+        <p>
+          We use the information you provide only to respond to your message.
+          For more information, please read our
+          <a href="privacy.html">Privacy Policy</a>.
+        </p>
 
         <button type="submit">Send Message</button>
       </form>
-
-      <p>If you have any questions, please contact us.</p>
     </main>
+
+    <footer>
+      <p>My Webshop</p>
+      <p>Email: info@mywebshop.com</p>
+      <p>&copy; 2026 My Webshop</p>
+      <a href="privacy.html">Privacy Policy</a>
+    </footer>
   </body>
 </html>
